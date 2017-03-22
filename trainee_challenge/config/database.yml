@@ -17,13 +17,16 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  port: 5432
+  username: cawai
+  password: 123456789
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
 development:
   <<: *default
-  database: trainee_challenge_development
+  database: db_trainee_challenge
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
